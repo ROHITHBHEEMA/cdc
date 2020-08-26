@@ -46,13 +46,55 @@
 .navbar-expand-lg .navbar-nav .nav-link{
 	padding:0;
 }
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 250px;
+  height: 250px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: #FFF748;
+  text-align: center;
+  background-color :#3C1A5B;
+}
+
+.animate:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 </style>
 </head>
 
 <body>
 
 	<!-- main banner -->
-	<div class="main-top" id="home">
+	<div class="main-top" id="home" >
 		<!-- header -->
 		<header>
 			<div class="container ">
@@ -122,9 +164,9 @@
 		<!-- //header -->
 		<!-- //main banner -->
 		<div>
-			<div class="midd-w3 py-5" id="faq">
-				<div class="container py-xl-5 py-lg-6">
-					<div class="row">
+			<div class="midd-w3 py-5" id="faq" style=" background: linear-gradient(180deg,white 70%, #3C1A5B 30%);">
+				<div class="container py-xl-5 py-lg-6 animate" style="background-color:white">
+					<div class="row" >
 						<div class="col-lg-9 about-right-faq">
 							<h3 class="text-da">Director's Message</h3>
 							<p align="”justify”" class="mt-4">Evolving a brand-name takes years of nurturing, hard work and passion. The global recognition of the IIT-brand is a fruition of such an endeavour by the undergraduate and post-graduate students, and their teachers and mentors. Each IITian feels proud to take the brand to greater heights by competing with the best in the discipline. IIT Bhubaneswar, which started its journey in 2008, has brought in the culture of innovation among its students. These students have received training that is ‘deep in depth’, yet ‘wide in breadth’.  They gained experience by working either ‘at the industry’ or ‘for the industry’. Such training has moulded them into better qualified professionals. Therefore, I am quite confident that our students shall perform the best on any platform and do justice to the trust placed on them. I, on the behalf of the entire fraternity of IIT Bhubaneswar, cordially invite companies/organizations for campus placement and summer internships for our students. I sincerely look forward to establishing a fruitful and long standing relationship.</p>
@@ -132,18 +174,23 @@
 
 						</div>
 						<div class="col-lg-3 align-items-center">
-							<img style="width: 12.5em; display:block; margin:auto;" src="images/director.jpg" alt="" class="img-fluid mt-5">
+							
+									<img style="width: 10.5em; display:block;margin:auto;" src="images/director.jpg" alt="" class="img-fluid mt-5">
+							
+							
 						</div>
 
 <br><br><br><div class="col-lg-9 about-right faq"><br><br><p><b>Prof. Ratnam V. Raja Kumar<br>Director, <br>IIT Bhubaneswar</b></p></div>
-					</div>
+		
+</div>
+					
 				</div>
 			</div>
 		<!-- //main banner -->
 		<!-- middle -->
-			<div class="midd-w3 py-5" id="faq">
-				<div class="container py-xl-5 py-lg-3">
-					<div class="row">
+			<div class="midd-w3 py-5" id="faq" style=" background: linear-gradient(180deg,white 70%, #3C1A5B 30%);">
+				<div class="container py-xl-5 py-lg-3 animate" style="background-color:white">
+					<div class="row" style="padding:25px">
 						<div class="col-lg-9 about-right-faq">
 							<h3 class="text-da">Prof.-In-Charge's Message</h3>
 							<p align="”justify”" class="mt-4">IIT Bhubaneswar was established in 2008 with a mission to bridge the gap between education, research and industries. It offers programmes like B.Tech, M.Tech, M.Sc and Ph.D in various disciplines. The Schools at IIT Bhubaneswar are equipped with state of the art equipment/facilities/laboratories and its faculty members are involved in a broad range of research areas and industrial consultancy. The Institute has collaborations with many reputed Universities, Research Organizations and Industries.
@@ -160,7 +207,10 @@
 							<br>
 						</div>
 						<div class="col-lg-3 align-items-center">
-							<img style="width:14.375em; display:block; margin:auto;" src="images/pic-cdc.jpg" alt="" class="img-fluid mt-5">
+							
+									<img style="width:14.375em; display:block; margin:auto;" src="images/pic-cdc.jpg" alt="" class="img-fluid mt-5">
+							
+							
 </div>
 <br>
 <div class="col-lg-9 about-right faq"><p><b>Dr. Arun Kumar Pradhan<br>Professor-in-charge<br>Career Development Cell</b></p></div>
@@ -169,9 +219,9 @@
 			</div>
 		</div>
 		<!-- //middle -->
-		<div class="midd-w3 py-5" id="faq">
-			<div class="container py-xl-5 py-lg-3">
-				<div class="row">
+		<div class="midd-w3 py-5" id="faq"  style=" background: linear-gradient(180deg,white 70%, #3C1A5B 30%);"   >
+			<div class="container py-xl-5 py-lg-3" style="background-color:white;">
+				<div class="row"  >
 					<div class="col-lg-9 about-right-faq">
 						<h3 class="text-da">Contact Us</h3>
 						<div class="section-block">
@@ -196,9 +246,9 @@
 		</div>
 	</div>
 	<!-- //middle -->
-
-	<div class="midd-w3 py-5" id="faq">
-		<div class="container py-xl-5 py-lg-3">
+     </div>
+	<div class="midd-w3 py-5" id="faq" style=" background: linear-gradient(180deg,white 70%, #3C1A5B 30%);">
+		<div class="container py-xl-5 py-lg-3" style="background-color:white">
 			<div class="row">
 				<div class="col-lg-9 about-right-faq">
 					<h3 class="text-da">Download</h3>
@@ -335,3 +385,4 @@
 </body>
 
 </html>
+
